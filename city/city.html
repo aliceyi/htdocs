@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./city.css" />
+	<script type="text/javascript" src="./jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="./city.js"></script>
+</head>
+<body>
+	<div class="city" id="city"></div>
+
+	<script type="text/javascript">
+		var city=new bshare.city({container:$("#city"),
+		clickCallback:function(){
+			alert(this.selected.join(","));
+		
+		}});
+	</script>
+	
+</body>
+</html>
