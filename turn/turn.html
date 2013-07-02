@@ -1,0 +1,28 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>div旋转组件</title>
+	<link rel="stylesheet" href="./css/turn.css" />
+</head>
+<body>
+	<div id="turnCon">
+		
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="./js/turn.js"></script>
+	<script type="text/javascript">
+		 var data={
+			  container:$("#turnCon"),
+			  width:150,
+			  height:150,
+			  items:[
+			  {img:'./images/file.png',title:'file',descript:'上传控件a'},
+			  {img:'./images/file.png',title:'file',descript:'上传控件b'},
+			  {img:'./images/file.png',title:'file',descript:'上传控件c'}
+			  ]
+		  }
+		 var turn=new bshare.Turn(data);
+	</script>
+</body>
+</html>

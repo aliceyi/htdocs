@@ -1,0 +1,57 @@
+/* Wrapper */
+.turnDom{}
+.animate-wrap {
+  position: relative;
+  float:left;
+  margin-right:10px;
+  margin-bottom:10px;
+  width: 150px; 
+  height: 150px;
+  background-color: #c6e1ec;
+  -webkit-perspective: 1000;
+     -moz-perspective: 1000;
+          perspective: 1000;
+  	  
+}
+/* Inputs */
+.animate-wrap input {
+  display: none;
+}
+/*
+.animate-wrap [type="radio"]:checked + .animate {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}*/
+ 
+.animate.selected {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+ 
+/* Image-Wrapper */
+.animate {
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease-out;
+     -moz-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+}
+ 
+/* Labels */
+label {
+  position: absolute; top: 0; left: 0; z-index: 2;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.back {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.front {
+  z-index: 1;
+}
