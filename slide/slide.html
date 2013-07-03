@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./slide.css" />
+
+	
+</head>
+<body>
+	<div class="slide" id="slide">
+		<div class="slideWarp">
+			<ul class="content">
+				<li><img src="./bg.jpg" alt="bg" /></li>
+				<li><img src="./bg2.jpg" alt="bg" /></li>
+				<li><img src="./bg3.jpg" alt="bg" /></li>
+				<li><img src="./bg.jpg" alt="bg" /></li>
+			</ul>
+		</div>
+		<div class="pagination clear">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="./jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="./slide.js"></script>
+	<script type="text/javascript">
+		var bs=new bshare.slide({container:$("#slide"),width:800});
+	</script>
+</body>
+
+</html>
