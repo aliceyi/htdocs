@@ -1,0 +1,9 @@
+
+.popWin{position:absolute;width:100%;height:100%;top:0px;}
+.popWall{width:100%;height:100%;background:#555;opacity:0.2;filter:alpha(opacity=20);}
+.popDom{position: absolute;background: #ddd;border: 1px solid #bcbcbc;top: 50%;left: 50%;overflow: hidden;}
+.titleDom{position: relative;height: 47px;background: #ececec;border-bottom: 1px solid #bcbcbc;}
+.titleCon{cursor:default;line-height: 45px;float: left;overflow: hidden;display: inline-block;height: 45px;color:#595959;padding-left: 15px;font-family: "微软雅黑";font-size: 18px;}
+.close{cursor:pointer; float: right;border: 1px solid red;height: 24px;width: 24px;margin: 10px 10px 0px 0px;background: #fff;border: 1px solid #cbcbcb;text-align: center;line-height: 24px;color: #848484;}
+.close:hover{border-color:#f80; color:#f80;}
+.bodyDom{background: #fff;position: absolute;top: 48px;bottom: 0px; left:0px; right:0px; padding: 15px;}

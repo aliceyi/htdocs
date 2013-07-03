@@ -1,0 +1,37 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./popWin.css" />
+	<script type="text/javascript" src="./jquery-1.7.min.js"></script>
+</head>
+<body>
+	<div id="city">
+		adfa
+	</div>
+	<div id="popWin" class="popWin">
+		
+	</div>
+	<script type="text/javascript" src="./popWin.js"></script>
+	<script type="text/javascript">
+		(function(){
+			var data={
+				container:$("#popWin"),
+				width:500,
+				height:500,
+				title:"选择城市",
+				content:$("#city"),
+				closeCallback:function(){
+				
+				},
+				afterCallback:function(){
+				
+				}
+			}
+			var popwin=new bshare.popWin(data);
+		})();
+	</script>
+	
+</body>
+</html>
