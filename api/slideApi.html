@@ -1,0 +1,75 @@
+﻿<link rel="stylesheet" href="../slide/slide.css" />
+<link rel="stylesheet" href="./api.css" />
+<div>
+	<div class="descript" > 
+		<h3 class="h3" >幻灯片组件</h3>
+		<p class="text">
+			<div class="spacer_left10" >
+			<h3 class="h3" >JS创建方法</h3>
+			<div style="color:#858590">
+				<pre>var bs=new bshare.Slide({container:$("#slide"),width:800});</pre>
+			</div>
+		</div>
+		<div class="spacer_left10 ">
+			<h3 class="h3" >属性</h3>
+			<div style="color:#858590">
+<pre>
+width:设置组件的宽度
+
+height:interger 设置组件的高度
+
+isPlay:boole 是否自动播放,默认为true;
+</pre>				
+			</div>
+			
+		</div>
+		<div class=" spacer_left10 ">
+			<h3 class="h3" >方法</h3>
+			<div style="color:#858590">
+<pre>
+selected:设置组件的宽度
+
+autoPlay:设置组件的高度
+
+clearPlay:是否自动播放
+</pre>				
+			</div>
+			
+		</div>
+		</p>
+	</div>
+	<div class=" spacer15"></div>
+	<div class="commonList " id="commonList">
+		<div class="demoShow ">
+			<h3 class="h3" >DEMO SHOW</h3>
+			<div class="spacer15"></div>
+			<div class="slide" id="slide" >
+			<div class="slideWarp">
+				<ul class="content">
+					<li><img src="../slide/bg2.jpg" alt="bg" /></li>
+					<li><img src="../slide/bg.jpg" alt="bg" /></li>
+					<li><img src="../slide/bg3.jpg" alt="bg" /></li>
+					<li><img src="../slide/bg.jpg" alt="bg" /></li>
+				</ul>
+				</div>
+				<div class="pagination ">
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+
+	</div>
+	</div>
+</div>
+<script type="text/javascript" src="jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../slide/slide.js"></script>
+<script type="text/javascript">
+	var bs=new bshare.slide({container:$("#slide"),width:800});
+</script>

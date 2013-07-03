@@ -1,0 +1,87 @@
+﻿<link rel="stylesheet" href="../turn/css/turn.css" />
+<div>
+	<div class="descript" > 
+		<h3 class="h3" >旋转组件</h3>
+		<div class="clear spacer10" ></div>
+		 <p class="text">
+			<div class="spacer_left10" >
+			<h3 class="h3" >JS创建方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+				<pre>$(".specialDay").calendar({btnBar:false,
+  format:'yyyy年MM月dd日 HH时mm分ss秒',
+  minDate:'yyyy-MM-dd',
+  maxDate:'yyyy-MM-dd',
+  noToday:true,
+  onSetDate:function(){},
+  ....
+  
+ });
+				</pre>
+			</div>
+			<div class="clear spacer10" ></div>
+		</div>
+		<div class="clear spacer10" ></div>
+		<div class="spacer_left10 ">
+			<h3 class="h3" >属性</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+		<pre>
+noToday:Boolean 是否包含今天 默认 false
+
+btnBar:Blooen 设置是否显示按钮栏，默认 true
+		
+format:String 定义日期格式 
+
+minDate:String 最小日期，默认 null,说明：注意格式要为 yyyy-MM-dd
+
+maxDate:String 设置最大日期，默认 null,说明：注意格式要为 yyyy-MM-dd
+
+targetFormat:String 设置目标文本框的日期格式，默认 null
+		
+onSetDate:Function 点击某一日期时执行的回调函数,默认 null,说明：当选择一个日期时点击这个日期时就会触发这个函数
+		
+		</pre>				
+			</div>
+			
+		</div>
+		<div class=" spacer_left10 ">
+		<div class="clear spacer10" ></div>
+			<h3 class="h3" >方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+		<pre>
+show() 显示日历
+		
+hide() 隐藏日历
+		
+getDate(type) 获取指定格式的日期
+		
+参数1：指定的日期格式 (y:返回年，M:返回月，d:返回日，H:返回小时，m:返回分钟，s:返回秒，date:返回年月日，格式yyyy-MM-dd，dateTime:返回年月日时分秒，格式yyyy-MM-dd HH:mm:ss)
+
+$.calendar.formatDate(data,format) 格式化日期
+
+参数1：date -- 要格式化的日期
+
+参数2：format -- 指定的格式
+		
+		</pre>				
+			</div>
+			
+		</div>
+		</p> 
+	</div>
+	<div class=" spacer15"></div>
+	<div class="commonList " id="commonList">
+		<h3 class="h3">DEMO SHOW</h3>
+		<div class="spacer15"></div>
+		<input class="runcode specialDay" />
+	</div>
+	</div>
+</div>
+<script type="text/javascript" src="../lhgcalendar/js/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" href="../lhgcalendar/css/lhgcalendar.css" />
+<script type="text/javascript" charset="utf-8" src="../lhgcalendar/js/lhgcalendar.js"></script>
+<script type="text/javascript">
+	 $(".specialDay").calendar({btnBar:false, format:'yyyy年MM月dd日',onSetDate:function(){} });
+</script>

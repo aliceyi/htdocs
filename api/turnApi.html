@@ -1,0 +1,85 @@
+﻿<link rel="stylesheet" href="../turn/css/turn.css" />
+<div>
+	<div class="descript" > 
+		<h3 class="h3" >旋转组件</h3>
+		<div class="clear spacer10" ></div>
+		<p class="text">
+			<div class="spacer_left10" >
+			<h3 class="h3" >JS创建方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+				<pre>var data={
+  container:$("#turnCon"),
+  width:150,
+  height:150,
+  items:[
+  {img:'./images/file.png',title:'file',descript:'上传控件a'},
+  {img:'./images/file.png',title:'file',descript:'上传控件b'},
+  {img:'./images/file.png',title:'file',descript:'上传控件c'}
+  ]
+}
+var turn=new bshare.Turn(data);</pre>
+			</div>
+			<div class="clear spacer10" ></div>
+		</div>
+		<div class="clear spacer10" ></div>
+		<div class="spacer_left10 ">
+			<h3 class="h3" >属性</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+width:设置组件的宽度
+
+height:interger 设置组件的高度
+
+container:Object 存放组件的容器
+
+</pre>				
+			</div>
+			
+		</div>
+		<div class=" spacer_left10 ">
+		<div class="clear spacer10" ></div>
+			<h3 class="h3" >方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+createItem:单独创建旋转项
+
+</pre>				
+			</div>
+			
+		</div>
+		</p>
+	</div>
+	<div class=" spacer15"></div>
+	<div class="commonList " id="commonList">
+		<h3 class="h3">DEMO SHOW</h3>
+		<div class="spacer15"></div>
+		<div id="turnCon">
+			
+		</div>
+		
+		
+
+	</div>
+	</div>
+</div>
+<script type="text/javascript" src="../turn/js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="../turn/js/turn.js"></script>
+	<script type="text/javascript">
+		 var data={
+			  container:$("#turnCon"),
+			  width:150,
+			  height:150,
+			  items:[
+			  {img:'../turn/images/file.png',title:'file',descript:'上传控件a'},
+			  {img:'../turn/images/file.png',title:'file',descript:'上传控件b'},
+			  {img:'../turn/images/file.png',title:'file',descript:'上传控件c'}
+			  ],
+			  callback:function(){
+				
+			  }
+		  }
+		 var turn=new bshare.Turn(data);
+	</script>

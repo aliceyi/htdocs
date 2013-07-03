@@ -1,0 +1,72 @@
+﻿<link rel="stylesheet" href="../time/css/timeSelect.css" />
+<div>
+	<div class="descript" > 
+		<h3 class="h3" >时间组件</h3>
+		<div class="clear spacer10" ></div>
+		<p class="text">
+			<div class="spacer_left10" >
+			<h3 class="h3" >JS创建方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+				<pre>var time=new bshare.timeSelect({container:$("#time"),
+	format:"hh:mm:ss",			
+	afterFun:function(){
+	$("#tiemShow").html(this.getTime());
+}});</pre>
+			</div>
+			<div class="clear spacer10" ></div>
+		</div>
+		<div class="clear spacer10" ></div>
+		<div class="spacer_left10 ">
+			<h3 class="h3" >属性</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+format:String 设置组件的格式如:'hh:mm:ss' or 'hh:mm'
+
+type:interger 设置组件显示时间为12小时制，24小时制 如：12 or 24
+
+container:Object 设置存放组件的容器
+
+afterFun:Function 设置组件操作后的扩展函数
+
+</pre>				
+			</div>
+			
+		</div>
+		<div class=" spacer_left10 ">
+		<div class="clear spacer10" ></div>
+			<h3 class="h3" >方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+getTime:获取时间组件的时间
+
+setTime:设置时间组件的选中时间
+
+</pre>				
+			</div>
+			
+		</div>
+		</p>
+	</div>
+	<div class=" spacer15"></div>
+	<div class="commonList " id="commonList">
+		<h3 class="h3">DEMO SHOW</h3>
+		<div class="spacer15"></div>
+		<div class="fontShow">时间：<span id="tiemShow" class="spacer_left10 "></span></div>
+		<div class="spacer10"></div>
+		<div id="time"></div>
+	</div>
+	</div>
+</div>
+<script type="text/javascript" src="../time/js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="../time/js/timeSelect.js"></script>
+	<script type="text/javascript">
+		 var time=new bshare.timeSelect({container:$("#time"),format:"hh:mm:ss",
+		 afterFun:function(){
+			$("#tiemShow").html(this.getTime());
+		 }});
+		 $("#tiemShow").html(time.getTime());
+		 
+	</script>

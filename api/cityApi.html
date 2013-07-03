@@ -1,0 +1,67 @@
+﻿<link rel="stylesheet" href="../city/city.css" />
+<div>
+	<div class="descript" > 
+		<h3 class="h3" >城市选择组件</h3>
+		<div class="clear spacer10" ></div>
+		<p class="text">
+			<div class="spacer_left10" >
+			<h3 class="h3" >JS创建方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+				<pre>var city=new bshare.city({container:$("#city"),
+	clickCallback:function(){
+	alert(this.selected.join(","));
+		
+}});</pre>
+			</div>
+			<div class="clear spacer10" ></div>
+		</div>
+		<div class="clear spacer10" ></div>
+		<div class="spacer_left10 ">
+			<h3 class="h3" >属性</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+clickCallback:Function 设置组件点击确认按钮时的扩展函数
+
+cancelCallback:Function 设置组件点击取消按钮时的扩展函数
+
+container:Object 存放组件的容器
+
+</pre>				
+			</div>
+			
+		</div>
+		<div class=" spacer_left10 ">
+		<div class="clear spacer10" ></div>
+			<h3 class="h3" >方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre> 
+
+</pre>				
+			</div>
+			
+		</div>
+		</p>
+	</div>
+	<div class=" spacer15"></div>
+	
+	<div class="commonList " id="commonList">
+		<h3 class="h3">DEMO SHOW</h3>
+		<div class="spacer15"></div>
+		<div class="fontShow">城市：<span id="cityShow" class="spacer_left5 "></span></div>
+		<div class="spacer15"></div>
+		<div class="city" id="city"></div>
+	</div>
+	</div>
+</div>
+<script type="text/javascript" src="../city/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../city/city.js"></script>
+	<script type="text/javascript">
+		var city=new bshare.city({container:$("#city"),
+		clickCallback:function(){
+			$("#cityShow").html(this.selectedCity.join(","));
+		
+		}});
+	</script>

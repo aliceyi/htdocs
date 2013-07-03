@@ -1,0 +1,115 @@
+﻿<link rel="stylesheet" href="../graph/css/visualize.css" />
+<div>
+	<div class="descript" > 
+		<h3 class="h3" >旋转组件</h3>
+		<div class="clear spacer10" ></div>
+		<p class="text">
+			<div class="spacer_left10" >
+			<h3 class="h3" >JS创建方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+				<pre>$('#divChartShares').visualize({
+            type : "pie",
+            height : 250,
+            width:500,
+            chartId: "PieCon",
+            appendTitle:false,
+            appendKey:true
+        });</pre>
+			</div>
+			<div class="clear spacer10" ></div>
+		</div>
+		<div class="clear spacer10" ></div>
+		<div class="spacer_left10 ">
+			<h3 class="h3" >属性</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+type:string	设置图表类型，'bar', 'area', 'pie', 'line' 默认: 'bar'.
+
+width: number 设置图表的宽度，默认是table的宽度
+
+height: number 设置图表的高度，默认是table的高度
+
+appendTitle: boolean 设置图表是否显示title, 默认是false
+
+title: string 设置图表的标题，默认是table的Caption元素
+
+colors: array 数组项的值是十六进制，设置图表的外观，默认['#be1e2d','#666699','#92d5ea','#ee8310','#8d10ee','#5a3b16','#26a4ed','#f45a90','#e9e744']
+
+textColors: array  数组项的值是十六进制, 图表的每项文字颜色对应数组的颜色，如果对应项为null/undefined 则用样式的默认颜色，默认是[]
+
+parseDirection:string 设置table里的数据显示的方向，如 'x' and 'y'，默认是 'x'
+
+pieMargin: number 设置饼图的周围空间，默认是 20
+
+pieLabelPos: string  设置文字在饼图的位置，'inside' and 'outside' 默认是'inside'
+
+lineWeight: number 设置图表线的粗细在线图和面积图中，默认是'4px'
+
+barGroupMargin: number 设置图表每个柱子之间的间距，默认是 10
+
+barMargin: number. Creates space around bars in bar chart (added to both sides of each bar). Default: 1
+
+</pre>				
+			</div>
+			
+		</div>
+		<div class=" spacer_left10 ">
+		<div class="clear spacer10" ></div>
+			<h3 class="h3" >注意点</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+若图表支持IE需引入excanvas.js 
+
+</pre>				
+			</div>
+			
+		</div>
+		</p>
+	</div>
+	<div class=" spacer15"></div>
+	<div class="commonList " id="commonList">
+		<h3 class="h3">DEMO SHOW</h3>
+		<div class="spacer15"></div>
+		<table id="divChartShares" style="table-layout: fixed; width: 94%; display: none;"><thead><tr><td></td><th>2013-04-24</th><th>2013-04-25</th><th>2013-04-26</th><th>2013-04-27</th><th>2013-04-28</th><th>2013-04-29</th><th>2013-04-30</th><th>2013-05-01</th><th>2013-05-02</th><th>2013-05-03</th><th>2013-05-04</th><th>2013-05-05</th><th>2013-05-06</th><th>2013-05-07</th><th>2013-05-08</th><th>2013-05-09</th><th>2013-05-10</th><th>2013-05-11</th><th>2013-05-12</th><th>2013-05-13</th><th>2013-05-14</th><th>2013-05-15</th><th>2013-05-16</th><th>2013-05-17</th><th>2013-05-18</th><th>2013-05-19</th><th>2013-05-20</th><th>2013-05-21</th><th>2013-05-22</th><th>2013-05-23</th><th>2013-05-24</th></tr></thead><tbody><tr>
+			<th scope="row">Mary</th>
+			<td>190</td>
+			<td>160</td>
+			<td>40</td>
+			<td>120</td>
+			<td>30</td>
+			<td>70</td>
+		</tr>
+		<tr>
+			<th scope="row">Tom</th>
+			<td>3</td>
+			<td>40</td>
+			<td>30</td>
+			<td>45</td>
+			<td>35</td>
+			<td>49</td>
+		</tr></tbody></table>
+		<div id="websiteChartShares">
+			
+		</div>
+		<div id="PieCon">
+		</div>
+	</div>
+	</div>
+</div>
+<!--[if IE]><script type="text/javascript" src="../graph/js/excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="../graph/js/jquery.visualize.js"></script>
+<script type="text/javascript" src="../graph/js/jquery.visualize.tooltip.js"></script>
+	<script type="text/javascript">
+		$('#divChartShares').visualize({
+            type : "pie",
+            // needs to be container width minus 60
+            height : 250, // needs to be container height minus 20
+            width:500,
+            chartId: "PieCon",
+            appendTitle:false,
+            appendKey:true
+        });
+	</script>

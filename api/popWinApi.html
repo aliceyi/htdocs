@@ -1,0 +1,92 @@
+﻿<link rel="stylesheet" href="../popWin/popWin.css" />
+<link rel="stylesheet" href="./api.css" />
+<div>
+	<div class="descript" > 
+		<h3 class="h3" >旋转组件</h3>
+		<div class="clear spacer10" ></div>
+		<p class="text">
+			<div class="spacer_left10" >
+			<h3 class="h3" >JS创建方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+				<pre>var data={
+	container:$("#popWin"),
+	width:500,
+	height:500,
+	title:"选择城市",
+	content:$("#city"),
+	closeCallback:function(){
+	
+	},
+	afterCallback:function(){
+	
+	}
+}
+var popwin=new bshare.popWin(data);</pre>
+			</div>
+			<div class="clear spacer10" ></div>
+		</div>
+		<div class="clear spacer10" ></div>
+		<div class="spacer_left10 ">
+			<h3 class="h3" >属性</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+width:设置组件的宽度
+
+height:interger 设置组件的高度
+
+container:Object 存放组件的容器
+
+</pre>				
+			</div>
+			
+		</div>
+		<div class=" spacer_left10 ">
+		<div class="clear spacer10" ></div>
+			<h3 class="h3" >方法</h3>
+			<div class="clear spacer10" ></div>
+			<div style="color:#858590">
+<pre>
+createItem:单独创建旋转项
+
+</pre>				
+			</div>
+			
+		</div>
+		</p>
+	</div>
+	<div class=" spacer15"></div>
+	<div class="commonList " id="commonList">
+		<div id="city">
+			adfa
+		</div>
+		<div id="popWin" class="popWin">
+			
+		</div>
+		
+		
+
+	</div>
+	</div>
+</div>
+<script type="text/javascript" src="./jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../popWin/popWin.js"></script>
+	<script type="text/javascript">
+		 (function(){
+			var data={
+				container:$("#popWin"),
+				width:300,
+				height:300,
+				title:"选择城市",
+				content:$("#city"),
+				closeCallback:function(){
+				
+				},
+				afterCallback:function(){
+				
+				}
+			}
+			var popwin=new bshare.popWin(data);
+		})();
+	</script>

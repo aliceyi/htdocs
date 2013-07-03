@@ -1,0 +1,34 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./css/accordion.css" />
+</head>
+<body>
+	<div class="leftMain">
+				
+	</div>
+	<script type="text/javascript" src="jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="./accordion.js"></script>
+	<script type="text/javascript">
+		
+		
+		
+		var data={
+			container:$(".leftMain"),
+			width:300,
+			items:[
+			{title:"概要",items:[{title:"概要描述",href:""}]},
+			{title:"组件",
+			items:[{title:"上传文件",href:""},
+			{title:"幻灯片",href:""}
+			
+			]}
+			]
+		}
+		var acc=new bshare.Accordion(data);
+
+	</script>
+</body>
+</html>

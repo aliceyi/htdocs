@@ -1,0 +1,46 @@
+﻿<link rel="stylesheet" href="../turn/css/turn.css" />
+<link rel="stylesheet" href="./api.css" />
+<div class="iframe_dom">
+	<div class="descript" > 
+		<h3 class="h3" >概要</h3>
+		<p class="text">
+			组件库的建立，主要是便于我们前端技术的积累和分享。
+		</p>
+	</div>
+	<div class=" spacer15"></div>
+	<div class="commonList" id="commonList">
+	
+		  
+	</div>
+	</div>
+</div>
+<script type="text/javascript" src="jquery-1.7.min.js"></script>
+<script type="text/javascript" src="../turn/js/turn.js"></script>
+<script type="text/javascript">
+
+	$(function(){
+		var turnData={
+			  container:$("#commonList"),
+			  loadCon:"iframe_dom",
+			  width:150,
+			  height:150,
+			  items:[
+			  {img:'./images/file.png',title:'上传文件',descript:'上传文件',href:'fileApi.php'},
+			  {img:'./images/slide.png',title:'幻灯片',descript:'幻灯片',href:"slideApi.html"},
+			  {img:'./images/city.png',title:'城市选择',descript:'城市选择',href:'cityApi.html'},
+			  {img:'./images/pagination.png',title:'pagination',descript:'pagination',href:'paginationApi.html'},
+			  {img:'./images/calendar.png',title:"日历",descript:'日历',href:"calendarApi.html"},
+			  {img:'./images/timeSelect.png',title:"时间选择器",descript:"时间选择器",href:"timeSelectApi.html"},
+			  {img:'./images/turn.png',title:"旋转",descript:'旋转',href:"turnApi.html"},
+			  {img:'./images/areaChart.png',title:"面积图",descript:'面积图',href:"areaGraphApi.html"},
+			  {img:'./images/pieChart.png',title:"饼图",descript:'饼图',href:"pieGraphApi.html"}
+			  ],
+			  callback:function(){
+				window.parent.acc.selectByTitle(this.data.title);
+			  }
+	}
+	var turn=new bshare.Turn(turnData);
+	})
+	
+	
+</script>

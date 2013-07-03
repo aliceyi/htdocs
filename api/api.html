@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./api.css" />
+	<link rel="stylesheet" href="./accordion/css/accordion.css" />
+	<script type="text/javascript" src="jquery-1.7.min.js"></script>
+</head>
+<body>
+	<div>
+		<div class="header spacer_left15">
+			<a class="headerTag" href="./api.html">bShare API</a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="leftMain">
+				
+		</div>
+		<div class="rightMain" >
+			<iframe id="iframe_dom" src="http://192.168.1.82/api/apiRight.html"></iframe>
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript" src="./accordion/js/accordion.js"></script>
+	<script type="text/javascript" src="./data.js"></script>
+	<script type="text/javascript">
+		var acc=new bshare.Accordion(accordionData);    
+	</script> 
+	
+</body>
+</html>

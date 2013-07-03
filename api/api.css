@@ -1,0 +1,104 @@
+﻿/* Reset */
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button,
+table, caption, tbody, tfoot, thead, tr, th, td, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+/*div spacers*/
+.spacer1, .spacer2, .spacer3, .spacer4, .spacer5, .spacer10, .spacer15, .spacer20, .spacer25, .spacer30, .spacer50, .spacer100 { height: 0; overflow: hidden; padding-bottom: 1px; }
+.spacer2 { padding-bottom: 2px; }
+.spacer3 { padding-bottom: 3px; }
+.spacer4 { padding-bottom: 4px; }
+.spacer5 { padding-bottom: 5px; }
+.spacer10 { padding-bottom: 10px; }
+.spacer15 { padding-bottom: 15px; }
+.spacer20 { padding-bottom: 20px; }
+.spacer25 { padding-bottom: 25px; }
+.spacer30 { padding-bottom: 30px; }
+.spacer40 { padding-bottom: 40px; }
+.spacer50 { padding-bottom: 50px; }
+.spacer100 { padding-bottom: 100px; }
+
+.spacer_right5 { padding-right: 5px;}
+.spacer_left5 { padding-left: 5px;}
+.spacer_left10 { padding-left: 10px;}
+.spacer_left15 { padding-left: 15px;}
+.spacer_left50 { padding-left: 50px;}
+.text_al_left{text-align:left;}
+
+/* common */
+.left { float: left; *display: inline; }
+.right { float: right; *display: inline; }
+.clear { clear: both; height: 0; overflow: hidden; line-height: 0; font-size: 0; }
+.hidden { display: none; }
+.floatFix { _height: 0; *zoom: 1; }
+* html .floatfix { *height:0; *width: 0; *white-space: nowrap; }
+.inlineBlock { display: inline-block; *display: inline; zoom: 1; }
+.fixed {position:fixed;top:50%;left:50%;}
+
+.hand{cursor:pointer;}
+
+/*Common Styles*/
+html{width:100%;height:100%;}
+body { width:100%;height:100%;min-width:1000px; position:relative; font:14px Helvetica,Calibri,Tahoma,Arial,宋体,sans-serif; background:#FFF;overflow-x: hidden; background: url("./images/bgnoise_lg.jpg") repeat scroll left top #E0E3EC;}
+button { vertical-align: middle; text-align: center; *width: auto; *overflow: visible; *margin-left: 2px; *margin-right: 2px; }
+textarea { font:14px Helvetica,Calibri,Tahoma,Arial,宋体,sans-serif; }
+input, select { font-family: Helvetica,Calibri,Tahoma,Arial,宋体,sans-serif; }
+input[type="checkbox"] { margin: 0; padding: 0; }
+input:disabled { background: #eee; }
+h1, h2 { font-family: Helvetica,Calibri,Tahoma,Arial,微软雅黑,宋体,sans-serif; }
+p { line-height: 140%; }
+
+.fontShow{font-size:16px;font-weight:bold;}
+
+
+/*page style */
+ul{list-style: none;}
+.header{height:80px;color:#3D7489;line-height:80px;font-size:32px;font-weight:bold;text-shadow:5px 2px 6px #E6802B;}
+.header .headerTag{color:#3D7489; text-decoration:none;}
+.main{overflow:hidden;position:relative;height:100%}
+.leftMain{width:200px;float:left;box-shadow:1px 1px 6px #000; position:absolute;*position:relative; bottom: 0px;top:0px; border-right: 1px solid #A1A7A8;}
+.rightMain{margin-left:215px;height:100% }
+.descript{min-height:200px; border:1px solid #CFD1D4;box-shadow: -1px 1px 6px #000; padding:5px 10px; }
+iframe{width:100%;height:100%;position:relative;}
+.iframe_dom{padding:0px 5px;}
+.footer{height:30px; background:#333;}
+.h3{color:#777777; font-size: 20px;  }
+.text{text-indent:20px; color: #858590}
+.commonList{position:relative;min-height:555px;border: 1px solid #CFD1D4; box-shadow: -1px 1px 6px #000;padding:15px;min-width:800px;_float:left;}
+.commonList:after{content:'.';display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.commonList .slide{position:relative;}
+.demoShow{overflow:hidden;margin-bottom:10px;}
+/* common button styling */
+.bButton{ min-width:80px; line-height: 32px; display: inline-block; *display: inline; zoom: 1; text-decoration: none; padding: 0 20px; margin: 0px; font-size: 14px; cursor: pointer; color: #333;
+    border: 1px solid #bbb; background: #E3E3E3; background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#F9F9F9), to(#E3E3E3)); background: -moz-linear-gradient(top, #F9F9F9, #E3E3E3); 
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#FFF9F9F9',EndColorStr='#FFE3E3E3'); 
+    border-radius: 3px; text-align: center; }
+.bButton:active { border: 1px solid #aaa; background: #F9F9F9;  }
+.bButton:hover { border-color: #aaa; }
+
+.bButton.orange { color: #fff; border-top: 1px solid #ff8834; border-left: 1px solid #ff8834; border-right: 1px solid #c95300; border-bottom: 1px solid #c95300;  background: #e96000; }
+.bButton.orange:active {background: #ee8800;  }
+.bButton.orange:hover { background: #ee8800; }
+
+.bButton.orange1 { color: #fff; border: 1px solid #F89C2F; background: #FF9D29; background: -webkit-gradient(linear, 0% 20%, 0% 90%, from(#FF9D29), to(#FF5C00)); background: -moz-linear-gradient(top, #FF9D29, #FF5C00); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#FFFF9D29',EndColorStr='#FFFF5C00'); }
+.bButton.orange1:active { border: 1px solid #FF5C00; background: #FCBC74; background: -webkit-gradient(linear, 0% 20%, 0% 90%, from(#FF5C00), to(#FF9D29)); background: -moz-linear-gradient(top, #FF5C00, #FF9D29); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#FFFF5C00',EndColorStr='#FFFF9D29'); }
+.bButton.orange1:hover { border-color: #f60; }
+
+.bButton.lightOrange {text-align:center; color: #ff6000; border: 1px solid #F89C2F; background: #ffe1b4; background: -webkit-gradient(linear, 0% 20%, 0% 90%, from(#fcf1e1), to(#ffe1b4)); background: -moz-linear-gradient(top, #fcf1e1, #ffe1b4); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#fcf1e1',EndColorStr='#ffe1b4'); }
+.bButton.lightOrange:active { border: 1px solid #FF5C00; background: #ffe1b4; background: -webkit-gradient(linear, 0% 20%, 0% 90%, from(#ffe1b4), to(#fcf1e1)); background: -moz-linear-gradient(top, #ffe1b4, #fcf1e1); filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffe1b4',EndColorStr='#fcf1e1'); }
+.bButton.lightOrange:hover { border-color: #f60; }
+
+
