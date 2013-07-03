@@ -1,0 +1,145 @@
+body{
+	
+
+}
+
+.fileContainer{
+	border:1px solid #DADADA;
+	width:560px;
+	background:#fff;
+}
+.fileBtnCon{
+	border-top:1px solid #DADADA;
+	padding:10px;
+	text-align:right;
+	position:relative;
+}
+#myupload{
+	position:relative;
+	padding:0px;
+	margin:0px;
+}
+.fileView{
+	_height:100%;
+	min-height:100px;
+	padding:10px;
+	overflow:hidden;
+	position:relative;
+}
+.fbtn{
+	font-size:12px;
+	background:#fff;
+	height:30px;
+	line-height:30px;
+	color:#565656;
+	border:1px solid #ccc;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.fbtn.blue{
+	background:#1AA8F5;
+	color:#fff;
+	border:0px;
+}
+
+.addFile{
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	vertical-align: middle;
+	position:relative;
+	float:left;
+	border: 1px solid #DFE2E4;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+.addFile span{
+	height: 80px;
+	line-height: 80px;
+	font-size: 60px;
+	font-weight:bolder;
+	color: #8BC7EC;
+	width:100%;
+	display:inline-block;
+	text-shadow:-1px -1px 2px #5EC6F6;
+}
+.addFile span:hover{
+	background:#ccc;
+}
+
+.fileView #msg{
+	position:relative;
+    clear: both;
+    text-align: right;
+    width: 100%;
+	background:#000;
+	opacity:0.5;
+	filter: alpha(opacity = 0.5); 
+	color:#fff;
+	height:20px;
+	line-heigh:20px;
+	top:5px;
+	display:none;
+}
+.fileView .item{
+	float:left;
+	width:80px;
+	height:80px;
+	margin:0px 10px 10px 0px;
+	overflow:hidden;
+}
+.fileView .item img{
+	width:100%;
+	height:100%;
+}
+.item{
+	position:relative;
+	
+
+}
+.item img{
+	position:absolute;
+}
+.animate{
+	transition: 0.8s;
+	-moz-transition: 0.8s;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
+}
+.item .delcon{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	text-align:right;
+	display:none;
+}
+.item .delbg{
+	background:#000;
+	opacity:0.5;
+	filter: alpha(opacity = 0.5); 
+	height: 24px;
+	 
+}
+.item .del{
+	position: absolute;
+	width:20px;
+	height:24px;
+	background:url("../images/del.png") no-repeat left top;
+	bottom: 0px;
+	right: 0px;
+}
+.item .del:active{
+	background-position:-28px 0px;
+}
+#file{
+	position: absolute;  
+    z-index: 100; 
+    font-size: 20px;  
+    opacity: 0;  
+    filter: alpha(opacity = 0);  
+	right:70px;
+}
