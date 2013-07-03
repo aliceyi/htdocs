@@ -1,0 +1,9 @@
+.pagination {font-size: 80%;}
+.pagination a {text-decoration: none;border: solid 1px #dadada;color: #555;}
+.pagination a, .pagination span {display: block;float: left;padding: 0.3em 0.5em;margin-right: 5px;margin-bottom: 5px;min-width:1em;text-align:center;}
+.pagination .current, .pagination a:hover {border: solid 1px #ffb038; color:#F60;}
+.pagination .current.prev, .pagination .current.next {color:#555;border-color:#d2d2d2;}
+.pagination .next {margin:0px;}
+.paginationCurrentPage, .paginationPage {font-weight:bold;font-size:13px;color:#F60;}
+.paginationDescribe {background:#ccc;padding:5px;}
+.pageDesCon{height:29px; line-height:29px;}
