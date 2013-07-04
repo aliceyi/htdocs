@@ -1,4 +1,5 @@
-﻿<link rel="stylesheet" href="../file/css/files.css" />
+﻿<link rel="stylesheet" href="./api.css" />
+<link rel="stylesheet" href="../file/css/files.css" />
 <div>
 	<div class="descript" > 
 		<h3 class="h3" >上传组件</h3>
